@@ -15,7 +15,7 @@ HV-HV setting from slide 22.
 
 Run it as
 
-    python -m ccat.examples.three_player_intersection
+    python -m src.examples.three_player_intersection
 """
 
 from __future__ import annotations
@@ -116,7 +116,7 @@ def _player_cost(
 
     # Lateral-accel surrogate: 0.5 * kappa^2 (a simple proxy that quadraticizes
     # cleanly, in lieu of the full kappa^2 v^4 which mixes state and control;
-    # the full term is available in ccat.costs.ccat.CurvatureCost for use with
+    # the full term is available in src.costs.ccat.CurvatureCost for use with
     # an Augmented-Lagrangian-style outer loop).
     pc.add_control_cost(
         player_idx,

@@ -12,8 +12,8 @@ import pytest
 
 os.environ.setdefault("MPLBACKEND", "Agg")
 
-from ccat.scenarios import REGISTRY, get
-from ccat.ui.app import solve_scenario
+from src.scenarios import REGISTRY, get
+from src.ui.app import solve_scenario
 
 
 @pytest.mark.parametrize("key", list(REGISTRY))
@@ -29,7 +29,7 @@ def test_each_scenario_solves(key, eq):
 
 
 def test_ui_app_constructs_and_runs_headlessly():
-    from ccat.ui.app import _CCATApp
+    from src.ui.app import _CCATApp
 
     app = _CCATApp()
     assert len(app._scenario_titles) == len(REGISTRY)

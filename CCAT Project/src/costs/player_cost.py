@@ -11,7 +11,7 @@ though this is rarely used).
 
 The quadratic approximation about an operating point ``(x, u_1, ..., u_N)``
 returns ``Q, l, R, r`` matching ``QuadraticCostApprox`` in
-``ccat.utils.types``.
+``src.utils.types``.
 """
 
 from __future__ import annotations

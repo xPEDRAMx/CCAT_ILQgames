@@ -1,7 +1,7 @@
 """Registry of pre-baked CCAT test scenarios.
 
 Each scenario is a callable that returns a :class:`Scenario` describing a
-multi-agent ilqgames problem. The interactive UI in ``ccat.ui`` consumes the
+multi-agent ilqgames problem. The interactive UI in ``src.ui`` consumes the
 registry to expose each scenario as a one-click test case.
 """
 

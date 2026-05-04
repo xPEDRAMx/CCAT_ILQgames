@@ -1,3 +1,17 @@
+Metadata-Version: 2.4
+Name: ccat-ilqgames
+Version: 0.1.0
+Summary: Iterative LQ differential-game solver for the CCAT complete-corridor intersection project.
+Author: CCAT Team
+License: BSD-3-Clause
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.23
+Requires-Dist: scipy>=1.10
+Requires-Dist: matplotlib>=3.6
+Provides-Extra: test
+Requires-Dist: pytest>=7; extra == "test"
+
 # CCAT — ILQ Games for Complete-Corridor Intersections
 
 A Python implementation of the iterative linear-quadratic (iLQ) differential-game
@@ -63,23 +77,23 @@ CCAT Project/
 
 ## Status
 
-| Component                                                       | Status |
-|            --------------------------------------               |:------:|
-| `Unicycle4D` dynamics (CCAT slide form)                         |   ✅    |
-| `ConcatenatedSystem` (multi-player wrapper)                     |   ✅    |
-| `PlayerCost` with auto-quadraticization                         |   ✅    |
-| Quadratic / semiquadratic / goal costs                          |   ⏳    |
-| Exponential pairwise proximity (slide form)                     |   ⏳    |
-| LQ **feedback** Nash solver (Basar–Olsder 6.17)                 |   ✅    |
-| LQ **open-loop** Nash solver (M/m/Λ recursion)                  |   ✅    |
-| iLQ outer loop with backtracking line search                    |   ✅    |
-| Three-player intersection example                               |   ✅    |
+| Component                                        | Status |
+|--------------------------------------------------|:------:|
+| `Unicycle4D` dynamics (CCAT slide form)          |   ✅    |
+| `ConcatenatedSystem` (multi-player wrapper)      |   ✅    |
+| `PlayerCost` with auto-quadraticization          |   ✅    |
+| Quadratic / semiquadratic / goal costs           |   ✅    |
+| Exponential pairwise proximity (slide form)      |   ✅    |
+| LQ **feedback** Nash solver (Basar–Olsder 6.17)  |   ✅    |
+| LQ **open-loop** Nash solver (M/m/Λ recursion)   |   ✅    |
+| iLQ outer loop with backtracking line search     |   ✅    |
+| Three-player intersection example                |   ✅    |
 | Full $\kappa^2 v^4$ + curb $v^2 e^{-\eta_s d}$ in all scenarios |   ⏳    |
-| Bundled scenarios registry (4 test cases)                       |   ✅    |
-| Interactive UI with live animation                              |   ✅    |
-| Augmented-Lagrangian box constraints                            |   ⏳    |
-| Receding-horizon driver + solution splicer                      |   ⏳    |
-| Generalized TTC safety metric                                   |   ⏳    |
+| Bundled scenarios registry (4 test cases)        |   ✅    |
+| Interactive UI with live animation               |   ✅    |
+| Augmented-Lagrangian box constraints             |   ⏳    |
+| Receding-horizon driver + solution splicer       |   ⏳    |
+| Generalized TTC safety metric                    |   ✅    |
 
 ## Quick start
 
@@ -111,10 +125,11 @@ same UI — the live animation plays back the iLQ-Nash trajectory at real time.
 
 ## Citation
 
-If you use this code or the problem formulation, cite our publication:
+If you use this code or the CCAT problem formulation, cite the CCAT project
+publication when available, and the iLQ-games reference below.
 
 Khakpour et al., *Understanding the interaction of vehicles within an intersection:
-an optimal control approach with differential games* — (venue / year).
+an optimal control approach with differential games* — (venue / year: add when published).
 
 Other useful sources:
 

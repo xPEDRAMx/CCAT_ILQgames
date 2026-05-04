@@ -5,14 +5,14 @@ from __future__ import annotations
 
 import numpy as np
 
-from ccat.costs import (
+from src.costs import (
     GoalCost,
     PlayerCost,
     QuadraticControlCost,
     QuadraticCost,
 )
-from ccat.dynamics import ConcatenatedSystem, Unicycle4D
-from ccat.solver import ILQParams, ILQSolver
+from src.dynamics import ConcatenatedSystem, Unicycle4D
+from src.solver import ILQParams, ILQSolver
 
 
 def _build_two_player_problem(horizon: int = 30):

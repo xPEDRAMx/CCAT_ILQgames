@@ -13,9 +13,9 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from ccat.solver.lq_feedback import solve_lq_feedback
-from ccat.solver.lq_open_loop import solve_lq_open_loop
-from ccat.utils.types import LinearDynamics, QuadraticCostApprox
+from src.solver.lq_feedback import solve_lq_feedback
+from src.solver.lq_open_loop import solve_lq_open_loop
+from src.utils.types import LinearDynamics, QuadraticCostApprox
 
 
 def _double_integrator_lin(T: int, dt: float = 0.1):

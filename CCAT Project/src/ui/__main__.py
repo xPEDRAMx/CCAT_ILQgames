@@ -1,4 +1,4 @@
-"""Entry point: ``python -m ccat.ui``."""
+"""Entry point: ``python -m src.ui``."""
 
 from .app import launch
 

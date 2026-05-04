@@ -23,4 +23,4 @@ test = ["pytest>=7"]
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["ccat*"]
+include = ["src*"]

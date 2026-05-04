@@ -104,7 +104,7 @@ class ExponentialPolylineDistanceCost(StateCost):
         self,
         position_indices: Tuple[int, int],
         v_index: int,
-        polyline,  # ccat.geometry.Polyline
+        polyline,  # src.geometry.Polyline
         eta: float,
         name: str = "exp_curb",
         apply_after_time: int = -1,

@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from ccat.dynamics import ConcatenatedSystem, Unicycle4D
+from src.dynamics import ConcatenatedSystem, Unicycle4D
 
 
 @pytest.fixture
