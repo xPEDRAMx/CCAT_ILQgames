@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccat-ilqgames"
+version = "0.1.0"
+description = "Iterative LQ differential-game solver for the CCAT complete-corridor intersection project."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "BSD-3-Clause" }
+authors = [
+  { name = "CCAT Team" },
+]
+dependencies = [
+  "numpy>=1.23",
+  "scipy>=1.10",
+  "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ccat*"]
