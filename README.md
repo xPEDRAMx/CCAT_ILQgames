@@ -23,7 +23,7 @@ $L$ and $\psi$; **slide 16 of 36** labels the stationary vs moving-obstacle
 pieces). The deck writes a **maximization**; we state the equivalent
 **minimization** here:
 
-$$J_i = \tfrac{b}{2}\lVert X_i(T) - X_i^d\rVert^2 + \int_0^T\Big[\beta_1 + \tfrac{\beta_2}{2}\kappa_i^2 v_i^4 + \tfrac{\beta_3}{2}a_i^2 + \tfrac{\beta_4}{2}v_i^2 e^{-\eta_s d_{curb,i}(t)} + \sum_{j\neq i}\tfrac{\beta_5}{2}m_i m_j v_{rel,ij}^2 e^{-\eta_m d_{ij}(t)}\Big]\,\mathrm{d}t$$
+$$J_i = \tfrac{b}{2}\lVert X_i(T) - X_i^d\rVert^2 + \int_0^T\Big[\beta_1 + \tfrac{\beta_2}{2}\kappa_i^2 v_i^4 + \tfrac{\beta_3}{2}a_i^2 + \tfrac{\beta_4}{2}v_i^2 e^{-\eta_s d_{curb,i}(t)} + \sum_{j\neq i}\tfrac{\beta_5}{2}m_i m_j v_{rel,ij}^2 e^{-\eta_m d_{ij}(t)}\Big]\\mathrm{d}t$$
 
 Box constraints on $a_i,\kappa_i,v_i$ (**slides 19–21 of 36**, and **slides 18–22 of 36** with the cost / Nash / PMP material):
 
